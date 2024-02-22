@@ -1,0 +1,22 @@
+---
+import '../styles/global.css'
+import Gtag from '@components/Gtag.astro'
+import CookieConsentForm from '@components/Cookie-consent-form.tsx'
+---
+
+<html lang="en" class="dark">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+		<Gtag />
+	</head>
+	<body>
+		<main class="p-8">
+			<h1>Astro + GA Analytics + Consent Banner</h1>
+			<CookieConsentForm client:only />
+		</main>
+	</body>
+</html>

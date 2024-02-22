@@ -1,0 +1,3 @@
+html, body {
+  @apply h-full dark:bg-slate-950 dark:text-slate-200
+}
